@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>morishiba — ссылки</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #121214;
+            color: #ffffff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 24px 16px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 440px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Аватар / Эмодзи */
+        .avatar-container {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #1f1f23;
+            border: 2px solid #ff7700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            margin-bottom: 16px;
+            box-shadow: 0 8px 24px rgba(255, 119, 0, 0.2);
+        }
+
+        /* Профиль */
+        .profile-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ff7700;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .profile-bio {
+            font-size: 14px;
+            color: #a0a0ab;
+            text-align: center;
+            margin-bottom: 32px;
+            line-height: 1.4;
+        }
+
+        /* Список ссылок */
+        .links-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            background-color: #1a1a1e;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-card:hover {
+            background-color: #242429;
+            border-color: rgba(255, 119, 0, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Стили для донатов / выделенной кнопки */
+        .link-card.highlight {
+            background: linear-gradient(135deg, rgba(255, 119, 0, 0.15), rgba(138, 43, 226, 0.15));
+            border-color: rgba(255, 119, 0, 0.3);
+        }
+
+        .link-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: #27272c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 14px;
+            flex-shrink: 0;
+            font-size: 22px;
+        }
+
+        .link-icon img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .link-content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .link-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 2px;
+        }
+
+        .link-desc {
+            font-size: 13px;
+            color: #8f8f9d;
+        }
+
+        .link-arrow {
+            color: #666675;
+            font-size: 16px;
+            margin-left: 10px;
+            transition: transform 0.2s;
+        }
+
+        .link-card:hover .link-arrow {
+            transform: translateX(3px);
+            color: #ff7700;
+        }
+
+        /* Футер */
+        .footer {
+            margin-top: 36px;
+            font-size: 12px;
+            color: #555563;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Аватар (эмодзи сиба-ину) -->
+        <div class="avatar-container">
+            🦊
+        </div>
+
+        <!-- Ник и описание -->
+        <h1 class="profile-name">morishiba</h1>
+        <p class="profile-bio">стримы игры общение</p>
+
+        <!-- Список ссылок -->
+        <div class="links-list">
+            
+            <!-- 1. Твич -->
+            <a href="https://www.twitch.tv/morishiba" class="link-card" target="_blank" rel="noopener">
+                <div class="link-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#9146FF"><path d="M11.64 5.93h1.66v5.81h-1.66V5.93zm3.32 0h1.66v5.81h-1.66V5.93zM3.32 0L0 3.32v15.75h6.05V24l3.32-3.32h4.98L24 13.28V0H3.32zm17.41 12.45l-3.32 3.32h-4.98l-2.49 2.49v-2.49H6.05V2.49h14.68v9.96z"/></svg>
+                </div>
+                <div class="link-content">
